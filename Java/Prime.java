@@ -6,23 +6,24 @@ public class Prime {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number broii");
         int n = sc.nextInt();
-        PrimeNUmberOrNot(n);
+        PrimeNumOrNot(n);
+       
 
 
 
         
     }
 
-    public static void PrimeNUmberOrNot(int n){
-    for(int i=2;i<=n;i++){
+     static void PrimeNumOrNot(int n){
 
-        if(n%i==0){
-            System.out.println("It is not a prime number");
-            return;
+        int a = 2;
+        for(int i=2;i<=n;i++){
+            if(a%2!=0){
+                System.out.println("It is not a  prime number broii sorry");
+                return;
+              
+            }
         }
-       
-    }
-    System.out.println(n+"It is a prime number");
-    
-}
+        System.out.print("Congagulations Brother it is a prime number ");
+     }
 }
