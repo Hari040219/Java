@@ -14,8 +14,8 @@ public class Fibonacci {
       for(int i=0;i<n;i++){
     System.out.print(a+" ");
         int next = a+b;
-         a = b;
-        b = next;
+        a = b;
+        b= next;
       }
           
     }
