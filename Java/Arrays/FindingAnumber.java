@@ -5,26 +5,35 @@ import java.util.Scanner;
 public class FindingAnumber {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please eneter the size of the array : ");
-        int size = sc.nextInt();
-       
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Please enter how many number u want to enter : ");
+    int n = sc.nextInt();
 
-        int arr[] = new int[size];
-        System.out.println("Please enter the elements of the array : ");
+    int arr [] = new int[n];
 
-        for(int i=0;i<size;i++){
-            arr[i]=sc.nextInt();
-        }
 
-        System.out.print("Please enter the element u want to search : ");
-        int n = sc.nextInt();
+    System.out.print("Ok enter your numbers : ");
+    for(int i =0;i<n;i++){
+      arr[i] = sc.nextInt();
+    }
 
-        for(int i =0;i<size;i++){
-          if(arr[i]==n){
-            System.out.println("Element found at index "+i);
-          }
-        }
+    
+    System.out.print("Please enter the number which u want to find out : ");
+    int a = sc.nextInt();
+    
+    for(int i=0;i<n;i++){
+      if(a==arr[i]){
+        System.out.print(" Your number is present in " + arr[i] +" index");
+        break;
+        
+      }
+      else{
+        System.out.print("correct agi check maadu guru");
+        break;
+      }
+      
+    }
+
             
 
 
