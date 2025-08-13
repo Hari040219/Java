@@ -19,7 +19,7 @@ public class Addition {
         int result = AdditionOfNumbers(a, b);
         System.out.println("The sum is: " + result);
         
-        sc.close(); // Always good to close the scanner!
+        sc.close(); 
     }
 }
 

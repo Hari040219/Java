@@ -14,20 +14,16 @@ public class Frequency {
        arr[i] = sc.nextInt();
     }
     Arrays.sort(arr);
-
     int count = 1;
 
-
-    for(int i=1;i<size;i++){
+    for(int i =1;i<size;i++){
         if(arr[i]==arr[i-1]){
             count++;
         }else{
-            System.out.println(arr[i-1] +"occurs" + count + "times");
+            System.out.println("The number" +arr[i-1]+ "occurs" + count + "times");
             count = 1;
         }
     }
-
-    System.out.println(arr[size - 1] + " occurs " + count + " times");
-
+    System.out.println("the number"+ arr[size-1]+ "occurs"+ count + "times");
     }
 }

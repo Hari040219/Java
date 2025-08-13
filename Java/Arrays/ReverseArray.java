@@ -16,20 +16,24 @@ public class ReverseArray {
             arr[i] = sc.nextInt();
         }
 
+
         int start = 0;
-        int end = size - 1;
-        
-        while(start<end){
+        int end = size-1;
+
+        for(int i =0;i<size;i++){
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
             start++;
             end--;
         }
-        System.out.print("The reversed Array is : ");
-        for(int i =0;i<size;i++){
-            System.out.print( arr[i]);
+
+        System.out.println("the reversed arr is : ");
+        for (int i = arr.length - 1; i>= 0; i--) {
+       System.out.print(arr[i] + " ");
+}
+
         }
 
     }
-}
+
