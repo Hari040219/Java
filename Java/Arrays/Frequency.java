@@ -16,7 +16,7 @@ public class Frequency {
     Arrays.sort(arr);
     int count = 1;
 
-    for(int i =1;i<size;i++){
+    for(int i=1;i<size;i++){
         if(arr[i]==arr[i-1]){
             count++;
         }else{

@@ -20,19 +20,26 @@ public class FindingAnumber {
     
     System.out.print("Please enter the number which u want to find out : ");
     int a = sc.nextInt();
+    int index=-1;
     
     for(int i=0;i<n;i++){
       if(a==arr[i]){
-        System.out.print(" Your number is present in " + arr[i] +" index");
+        index=i;
         break;
         
       }
+
+    }
+
+    if(index!=-1){
+      System.out.println("your number is present at index " + index);
+    }
       else{
         System.out.print("correct agi check maadu guru");
-        break;
+        
       }
       
-    }
+    
 
             
 
