@@ -5,6 +5,6 @@ public class ToString {
         int number = 123;
         String a = Integer.toString(number);
         System.out.println(a);
-        System.out.println(a);
+       
     }
 }
